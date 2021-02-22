@@ -1,0 +1,12 @@
+<input type="file" (change)="onFileChange($event)" multiple="false" />
+<button (click)="export()">Export!</button>
+<button (click)="generalTable()">Load Table</button>
+<table>
+	<tbody>
+		<tr *ngFor="let row of data">
+			<td *ngFor="let val of row">
+				{{val}}
+			</td>
+		</tr>
+	</tbody>
+</table>
